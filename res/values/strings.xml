@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmsClock</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	
+    <!-- app message -->
+    <string name="app_title_name">系统主页</string>
+    <string name="app_clock_setting">闹钟设置</string>
+    <string name="app_clock_search">闹钟查询</string>
+    <string name="app_clock_contact">短信</string>
+    <string name="app_clock_udpate">闹钟修改</string>
+    <string name="app_clock_send">已发短信</string>
+    
+    <!-- view name -->
+    <string name="textview_telphone">手机号:</string>
+    <string name="textview_telname">接收人:</string>
+    <string name="textview_sms_content">短信内容:</string>
+    <string name="textview_sms_sendtime">发送时间:</string>
+    <string name="textview_sms_submit">提交</string>
+    
+    <!-- Notification message -->
+    <string name="notification_title">发送成功</string>
+    <string name="notification_content">给%1$发送了一条短信!</string>
+    <string name="sms_next_content">下一条短信于%1$后发送!</string>
+    <string name="sms_boot_content">已开机,短信于%1$后发送!</string>
+    <string name="sms_send_msg">后发送!</string>
+    <string name="sms_recevier_name">未知</string>
+    
+    <!-- toast message -->
+    <string name="sms_delete_msg">删除成功!</string>
+    <string name="sms_input_telphone_msg">请输入手机号!</string>
+    <string name="sms_input_content_msg">请输入短信内容!</string>
+    <string name="sms_sent_time_exit_msg">发送时间已过,请重新设置!</string>
+    <string name="sms_update_msg">更新成功!</string>
+    <string name="sms_setting_fail_msg">短信闹钟设置失败!</string>
+    
+    <string-array name="listview_data">
+        <item >版本更新</item>
+    </string-array>
+    
+    <!-- grid item name -->
+    <string name="sms_alarm_contact">短信</string>
+    <string name="sms_alarm_set1">添加闹钟</string>
+    <string name="sms_alarm_exist_set">闹钟查询</string>
+    <string name="sms_alarm_yet_send">已发短信</string>
+    <string name="sms_alarm_wait">等待实现</string>
+    
+    <string name="sms_content_input_hit">请输入内容</string>
+    <string name="app_content_in_system">进入系统菜单</string>
+    <string name="app_content_new_system">确定要更新版本吗?</string>
+    <string name="app_sure">确定</string>
+    <string name="app_exit">取消</string>
+    <string name="app_port">端口:</string>
+    <string name="app_server_ip">服务器IP:</string>
+    <string name="app_system_menu">系统菜单</string>
+    <string name="app_set_server">设置服务器</string>
+    <string name="app_edit">编辑</string>
+    <string name="app_delete">删除</string>
+</resources>

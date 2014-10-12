@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="100dp" 
+	android:orientation="vertical"
+    >
+	<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/app_content_new_system" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		>
+        <Button
+            android:id="@+id/app_menu_dialog_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/app_sure" />
+
+        <Button
+            android:id="@+id/app_menu_dialog_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="@string/app_exit" 
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_body_bg"
+    >
+
+    <RelativeLayout 
+       android:id="@+id/sms_alarm_group_thread_top"
+       android:layout_width="fill_parent"
+       android:layout_height="35dp"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/app_title"
+       >
+       <Button android:id="@+id/tv_app_title_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/app_title_back" android:layout_centerVertical="true" android:layout_alignParentLeft="true" android:layout_marginLeft="8dp"/>
+        
+       <TextView 
+		   android:id="@+id/sms_alarm_group_thread_name"	
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+		   android:layout_centerInParent="true"
+		   android:textColor="@color/list_item_bg_normal"
+           />
+       <TextView 
+		   android:id="@+id/sms_alarm_group_thread_telphone"	
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           />
+   </RelativeLayout>
+   
+   <RelativeLayout 
+       android:id="@+id/sms_alarm_group_thread_bottom"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:focusable="true"
+	   android:focusableInTouchMode="true"
+	   android:background="@drawable/app_bg_shape"
+       >
+       <EditText 
+           android:id="@+id/sms_alarm_group_thread_sendcontent"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:hint="@string/sms_content_input_hit"
+           android:gravity="center_vertical"
+           android:layout_centerVertical="true"
+           android:paddingRight="40dp"
+           android:background="@null"
+           android:textColor="@color/setting_item_text"
+           />
+       <ImageView 
+           android:id="@+id/sms_alarm_group_thread_sendbutton"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@drawable/right"
+           android:layout_alignRight="@id/sms_alarm_group_thread_sendcontent"
+           android:layout_centerVertical="true"
+           />
+   </RelativeLayout>
+    
+   <com.hecj.smsclock.view.SMSHeaderFreshListView 
+       android:id="@+id/sms_alarm_group_thread_listview"	
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/sms_alarm_group_thread_top"
+       android:layout_above="@id/sms_alarm_group_thread_bottom"
+       android:fadingEdge="none"  
+       android:scrollingCache="false"
+       android:divider="@null"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       />
+   
+
+</RelativeLayout>

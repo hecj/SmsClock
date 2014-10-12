@@ -1,0 +1,60 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="style_app_title">
+        <item name="android:textSize">@dimen/app_title_name</item>
+        <item name="android:textColor">#EFEFEF</item>
+    </style>
+
+    <style name="style_app_button">
+        <item name="android:textSize">@dimen/app_title_name</item>
+        <item name="android:textColor">#D2D2D5</item>
+    </style>
+
+    <style name="style_edittext">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="style_grid_item">
+        <item name="android:width">0dp</item>
+        <item name="android:height">0dp</item>
+        <item name="android:background">@drawable/grid_item</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_out_right</item>
+    </style>
+
+</resources>

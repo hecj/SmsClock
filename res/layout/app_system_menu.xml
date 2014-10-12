@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/app_menu_title_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/app_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/app_system_menu"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/app_menu_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/app_menu_title_icon"
+        android:layout_margin="5dp"
+        android:background="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/app_menu_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_menu_line1"
+        android:layout_marginTop="20dp"
+        android:divider="#000000"
+        android:fadingEdge="none"
+        android:scrollingCache="false" />
+
+    <View
+        android:id="@+id/app_menu_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/app_menu_listview"
+        android:layout_margin="5dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/app_menu_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal" >
+	
+        <Button
+            android:id="@+id/app_menu_setting"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/app_menu_setting"
+            />
+        
+        <Button
+            android:id="@+id/app_system_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_menu_back" />
+    </LinearLayout>
+
+</RelativeLayout>
